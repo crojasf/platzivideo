@@ -13,7 +13,6 @@ Notas del curso para escribir código utilizando JavaScript puro (Vanilla JS) y 
 **let**: declarar variable que solo vive en el entorno (bloque) en el que fue creado y en los bloques hijos.
 
 **funciones**: ejecuta un bloque de código cuando la función es invocada.
-
 <code><pre>function nombreFuncion(parametros){
 	//código que se ejecuta
 }
