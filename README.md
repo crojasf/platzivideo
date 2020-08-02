@@ -14,8 +14,7 @@ Notas del curso para escribir código utilizando JavaScript puro (Vanilla JS) y 
 
 **funciones**: ejecuta un bloque de código cuando la función es invocada.
 
-<code><pre>
-function nombreFuncion(parametros){
+<code><pre>function nombreFuncion(parametros){
 	//código que se ejecuta
 }
 </pre></code>
