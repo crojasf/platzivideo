@@ -13,13 +13,13 @@ Notas del curso para escribir código utilizando JavaScript puro (Vanilla JS) y 
 **let**: declarar variable que solo vive en el entorno (bloque) en el que fue creado y en los bloques hijos.
 
 **funciones**: ejecuta un bloque de código cuando la función es invocada.
-<code><pre>function nombreFuncion(parametros){
+<code><pre>
+function nombreFuncion(parametros){
 	//código que se ejecuta
 }
 </pre></code>
 
 **promesas**: Una Promesa es un objeto que representa la terminación o el fracaso eventual de una operación asíncrona. Una promesa representa un valor que puede estar disponible ahora, en el futuro, o nunca. "new Promise( /\* ejecutor \*/ function(resolver, rechazar) { ... } );". El ejecutor inicia un trabajo asíncrono, y luego, una vez que es completado, llama a la función *resolver* si la promesa a resuelto correctamente o llama a *rechazar* si ha ocurrido un error.
-
 <code><pre>
 const varPromesa = new Promise(function(resolver,rechazar) {
 	// Llamamos a resolver(...) cuando finaliza con éxito, y rechazar(...) cuando falla.
@@ -46,7 +46,6 @@ varPromesa
 
 **Promise.all(iterable)**
 Devuelve una de dos promesas: una que se cumple cuando *todas* las promesas en el argumento iterable (Array) han sido cumplidas (devuelve un array con los mensajes de cada resolver de cada promesa), o una que se rechaza *tan pronto* como una de las promesas del argumento iterable es rechazada (devuelve el mensaje de rechazo de la promesa que falló).
-
 <code><pre>
 Promise.all([p1, p2, p3])
 .then(valoresExito => { 
@@ -101,7 +100,6 @@ Vamos a realizar peticiones con fetch a la API de yts para pedirle películas se
 
 
 ### Vanilla JS
-
 <code><pre>
 async function getData(url) {
 	const response = await fetch(url);
@@ -117,7 +115,6 @@ const actionList = await getData('https://yts.mx/api/v2/list_movies.json?genre=a
 Un selector nos sirve para poder manipular un objeto del DOM, puedes buscar dicho objeto ya sea por su id, clase, atributo, etc.
 
 ### jQuery
-
 <code><pre>
 const $elemento = $('elemento')
 </pre></code>
@@ -131,8 +128,6 @@ Se usa funciones específicas para cada elemento:
 * **getElementsByClassName**: recibe como parámetro la clase y te regresa una colección html de los elementos que tengan esa clase.
 * **querySelector**: va a buscar el primer elemento que coincida con el selector que le pases como parámetro.
 * **querySelectorAll**: va a buscar todos los elementos que coincidan con el selector que le pases como parámetro.
-
-
 <code><pre>
 const $sections = document.getElementsByTagName('section');
 const $home = document.getElementById('home');
@@ -157,7 +152,7 @@ Se concatenan los valores de cada línea
 </pre></code>
 
 ### Vanilla JS
-Con ECMAScript6 se usan las plantillas usando los acentos invertidos (``) para delimitar el texto
+Con ECMAScript6 se usan las plantillas usando los acentos invertidos (` `) para delimitar el texto
 <code><pre>
 function videoItemTemplate(src,title) {
 	return (
@@ -202,13 +197,11 @@ Para que un elemento HTML pueda escuchar algún evento debemos usar el método *
 
 
 ### jQuery
-
 <code><pre>
 $("button").on( "click", function(){//...} )
 </pre></code>
 
 ### Vanilla JS
-
 <code><pre>
 const $button = document.querySelector('button');
 $button.addEventListener('click', function(){//...} )
@@ -359,7 +352,6 @@ try {
   // Note - error messages will vary depending on browser
 }
 </pre></code>
-
 <code><pre>
 async function getDataUsers(url) {
 		const response = await fetch(url); 
