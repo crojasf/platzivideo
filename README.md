@@ -132,7 +132,6 @@ Se usa funciones específicas para cada elemento:
 const $sections = document.getElementsByTagName('section');
 const $home = document.getElementById('home');
 const $sidebarPlaylist = document.getElementsByClassName('sidebarPlaylist);
-
 const $modal = document.getElementById('modal')
 const $modalImage1 = document.querySelector('#modal img')
 const $modalImage2 = $modal.querySelector('img')
