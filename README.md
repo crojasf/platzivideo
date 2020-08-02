@@ -128,6 +128,7 @@ Se usa funciones específicas para cada elemento:
 * **getElementsByClassName**: recibe como parámetro la clase y te regresa una colección html de los elementos que tengan esa clase.
 * **querySelector**: va a buscar el primer elemento que coincida con el selector que le pases como parámetro.
 * **querySelectorAll**: va a buscar todos los elementos que coincidan con el selector que le pases como parámetro.
+
 <code><pre>
 const $sections = document.getElementsByTagName('section');
 const $home = document.getElementById('home');
@@ -370,15 +371,15 @@ La propiedad de sólo lectura localStorage te permite acceder al objeto local St
 
 **IMPORTANTE** localStorage solo guarda texto, por lo que, si quiero guardar una lista o un objeto debo convertirlo de objeto a texto.
 
-*window.localStorage.setItem(nombre,valor)*: agrega un elemento llamado 'nombre' y su 'valor' al localStroage.
+**window.localStorage.setItem(nombre,valor)**: agrega un elemento llamado 'nombre' y su 'valor' al localStroage.
 
-*window.localStorage.getItem(nombre)*: devuelve el "valor" de un elemento de localStroage.
+**window.localStorage.getItem(nombre)**: devuelve el "valor" de un elemento de localStroage.
 
-*window.localStorage.clear()*: limpia todo el localStorage.
+**window.localStorage.clear()**: limpia todo el localStorage.
 
-*JSON.stringify({nombre:valor,...})*: convierte el objeto JSON en texto plano.
+**JSON.stringify({nombre:valor,...})**: convierte el objeto JSON en texto plano.
 
-*JSON.parse("{nombre:valor,...}")*: convierte el texto plano en formato objeto en un objeto JSON.
+**JSON.parse("{nombre:valor,...}")**: convierte el texto plano en formato objeto en un objeto JSON.
 
 
 
